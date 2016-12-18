@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="#f1e5c1"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:id="@+id/productIconImageView" />
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp">
+        <TextView
+            android:text="Product Name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/productNameListTextView" />
+        <TextView
+            android:text="Abstract ... Description"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:id="@+id/productAbstractListTextView"
+            android:layout_below="@+id/productNameListTextView" />
+        <TextView
+            android:text="100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_alignParentRight="true"
+            android:id="@+id/productPriceListTextView" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/phoenix"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/logoImageView" />
+    <Button
+        android:text="Go to Store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/goToStoreMainMenuButton" />
+    <Button
+        android:text="View Cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewCartMainMenuButton" />
+    <Button
+        android:text="Take Picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/takePicMainMenuButton" />
+    <Button
+        android:text="See on Map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seeMapMainMenuButton" />
+    <Button
+        android:text="About"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutMainMenuButton" />
+</LinearLayout>
