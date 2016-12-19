@@ -19,12 +19,12 @@ namespace TestOrderApp.Fragments
     {
         protected ListView listView;
         protected ProductService _productsService;
-        protected List<Product> _products;
+        protected List<Book> _products;
 
         public BaseFragment()
         {
             _productsService = new ProductService();
-            _products = new List<Product>();
+            _products = new List<Book>();
         }
 
         protected void FindViews()

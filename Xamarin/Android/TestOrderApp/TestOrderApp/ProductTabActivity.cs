@@ -33,9 +33,10 @@ namespace TestOrderApp
             //Set the action type to be tabbed
             ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
 
-            AddTab("Favorites", Resource.Drawable.favourite, new FavProductFragment());
-            AddTab("Android", Resource.Drawable.Icon, new AndroidFragment());
-            AddTab("Favorites", Resource.Drawable.ionic, new IonicFragment());
+            AddTab("Favorites", Resource.Drawable.fav, new FavBookFragment());
+            AddTab("Science", Resource.Drawable.science, new ScienceFragment());
+            AddTab("Mystery", Resource.Drawable.mystery, new MysteryFragment());
+            AddTab("Fantasy", Resource.Drawable.fantasy, new FantasyFragment());
         }
          
         private void AddTab(string tabText, int iconResourceId, Fragment view)

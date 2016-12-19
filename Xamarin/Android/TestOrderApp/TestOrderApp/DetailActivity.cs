@@ -27,7 +27,7 @@ namespace TestOrderApp
         private Button _orderButton;
 
         private ProductService _productService;
-        private Product _product;
+        private Book _product;
 
         public DetailActivity()
         {
@@ -63,7 +63,7 @@ namespace TestOrderApp
         private void BindData()
         {
             _productNameView.Text = _product.Name;
-            _productDescriptionView.Text = _product.ShortDescription;
+            _productDescriptionView.Text = _product.Description;
             _productPriceTextView.Text = _product.Price.ToString();
 
             var imageBitMap = ImageHelper.GetImageBitmapFromUrl(_product.ImagePath);

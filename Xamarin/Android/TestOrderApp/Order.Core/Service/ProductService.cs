@@ -9,30 +9,30 @@ namespace Order.Core.Service
         private readonly IRepository _repository;
         public ProductService()
         {
-            _repository = new InMemoryRepository();
+            _repository = new ApiRepository();
         }
 
-        public IEnumerable<Product> GetAllProducts()
+        public IEnumerable<Book> GetAllBooks()
         {
-            return _repository.GetAllProducts();
+            return _repository.GetAllBooks();
         }
 
-        public IEnumerable<Product> GetFavoriteProducts()
+        public IEnumerable<Book> GetFavoriteBooks()
         {
             return _repository.GetFavouriteProducts();
         }
 
-        public Product GetById(int Id)
+        public Book GetById(int Id)
         {
             return _repository.GetById(Id);
         }
-        public IEnumerable<ProductGroup> GetProductGroups()
+        public IEnumerable<Subject> GetSubjects()
         {
             return _repository.GetProductGroups();
         }
-        public ProductGroup GetProductGroup(int id)
+        public IEnumerable<Book> GetBySubject(string genreName)
         {
-            return _repository.GetProductGroup(id);
+            return _repository.GetByGenre(genreName);
         }
     }
 }

@@ -19,12 +19,12 @@ namespace TestOrderApp
     public class ProductMenuActivity : Activity
     {
         private ListView _productsListView;
-        private List<Product> _products;
+        private List<Book> _products;
         private ProductService _productServices;
         public ProductMenuActivity()
         {
             _productServices = new ProductService();
-            _products = new List<Product>();
+            _products = new List<Book>();
         }
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,7 +34,7 @@ namespace TestOrderApp
             SetContentView(Resource.Layout.ProductMenuView);
 
             _productsListView = FindViewById<ListView>(Resource.Id.productListView);
-            _products = _productServices.GetAllProducts().ToList();
+            _products = _productServices.GetAllBooks().ToList();
 
             _productsListView.Adapter = new ProductListAdapter(this, _products);
             _productsListView.FastScrollEnabled = true;

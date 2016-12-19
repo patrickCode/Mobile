@@ -5,10 +5,11 @@ namespace Order.Core.Repository
 {
     public interface IRepository
     {
-        IEnumerable<Product> GetAllProducts();
-        Product GetById(int Id);
-        IEnumerable<ProductGroup> GetProductGroups();
-        ProductGroup GetProductGroup(int id);
-        IEnumerable<Product> GetFavouriteProducts();
+        IEnumerable<Book> GetAllBooks();
+        Book GetById(int Id);
+        IEnumerable<Subject> GetProductGroups();
+        Subject GetProductGroup(int id);
+        IEnumerable<Book> GetFavouriteProducts();
+        IEnumerable<Book> GetByGenre(string genreName);
     }
 }

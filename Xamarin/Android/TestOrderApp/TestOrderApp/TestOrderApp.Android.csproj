@@ -70,10 +70,11 @@
     <Compile Include="AboutUsActivity.cs" />
     <Compile Include="Adapters\ProductListAdapter.cs" />
     <Compile Include="DetailActivity.cs" />
-    <Compile Include="Fragments\IonicFragment.cs" />
-    <Compile Include="Fragments\AndroidFragment.cs" />
+    <Compile Include="Fragments\FantasyFragment.cs" />
+    <Compile Include="Fragments\MysteryFragment.cs" />
+    <Compile Include="Fragments\ScienceFragment.cs" />
     <Compile Include="Fragments\BaseFragment.cs" />
-    <Compile Include="Fragments\FavProductFragment.cs" />
+    <Compile Include="Fragments\FavBookFragment.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MapViewActivity.cs" />
     <Compile Include="MenuActivity.cs" />
@@ -103,13 +104,13 @@
     <AndroidResource Include="Resources\layout\AboutView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\FavProductsFragment.axml">
+    <AndroidResource Include="Resources\layout\FavBooksFragment.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\AndroidProducts.axml">
+    <AndroidResource Include="Resources\layout\ScienceFragment.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\IonicProductsFragment.axml">
+    <AndroidResource Include="Resources\layout\MysteryFragment.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ProductTabbedView.axml">
@@ -122,6 +123,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\MapViewLayout.axml" />
+    <AndroidResource Include="Resources\layout\FantasyFragment.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
@@ -157,6 +161,18 @@
       <Visible>False</Visible>
       <Version>29.0.0.2</Version>
     </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fav.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mystery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fantasy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\science.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets')" />

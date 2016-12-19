@@ -14,7 +14,7 @@ using TestOrderApp.Adapters;
 
 namespace TestOrderApp.Fragments
 {
-    public class AndroidFragment : BaseFragment
+    public class ScienceFragment : BaseFragment
     {
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -30,7 +30,7 @@ namespace TestOrderApp.Fragments
             FindViews();
             HandleEvents();
 
-            _products = _productsService.GetProductGroup(1).Products;
+            _products = _productsService.GetBySubject("Science").ToList();
             listView.Adapter = new ProductListAdapter(this.Activity, _products);
             listView.FastScrollEnabled = true;
         }
@@ -39,7 +39,7 @@ namespace TestOrderApp.Fragments
         {
             // Use this to return your custom view for this Fragment
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-            return inflater.Inflate(Resource.Layout.AndroidProducts, container, false);
+            return inflater.Inflate(Resource.Layout.ScienceFragment, container, false);
         }
     }
 }

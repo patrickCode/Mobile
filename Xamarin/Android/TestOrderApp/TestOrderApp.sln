@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestOrderApp.Android", "Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Core", "Order.Core\Order.Core.csproj", "{5A807352-77BA-49B3-9EBC-7EC8127DBECD}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Order.API", "Order.API\Order.API.xproj", "{0AF1E3CA-A7DF-4C28-AEE1-74A35849E070}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{5A807352-77BA-49B3-9EBC-7EC8127DBECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A807352-77BA-49B3-9EBC-7EC8127DBECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A807352-77BA-49B3-9EBC-7EC8127DBECD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AF1E3CA-A7DF-4C28-AEE1-74A35849E070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AF1E3CA-A7DF-4C28-AEE1-74A35849E070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AF1E3CA-A7DF-4C28-AEE1-74A35849E070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AF1E3CA-A7DF-4C28-AEE1-74A35849E070}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -316,16 +316,28 @@ namespace TestOrderApp
 			public const int common_plus_signin_btn_text_light_pressed = 2130837545;
 			
 			// aapt resource value: 0x7f02002a
-			public const int favourite = 2130837546;
+			public const int fantasy = 2130837546;
 			
 			// aapt resource value: 0x7f02002b
-			public const int Icon = 2130837547;
+			public const int fav = 2130837547;
 			
 			// aapt resource value: 0x7f02002c
-			public const int ionic = 2130837548;
+			public const int favourite = 2130837548;
 			
 			// aapt resource value: 0x7f02002d
-			public const int phoenix = 2130837549;
+			public const int Icon = 2130837549;
+			
+			// aapt resource value: 0x7f02002e
+			public const int ionic = 2130837550;
+			
+			// aapt resource value: 0x7f02002f
+			public const int mystery = 2130837551;
+			
+			// aapt resource value: 0x7f020030
+			public const int phoenix = 2130837552;
+			
+			// aapt resource value: 0x7f020031
+			public const int science = 2130837553;
 			
 			static Drawable()
 			{
@@ -499,22 +511,22 @@ namespace TestOrderApp
 			public const int AboutView = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int AndroidProducts = 2130903041;
+			public const int FantasyFragment = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int FavProductsFragment = 2130903042;
+			public const int FavBooksFragment = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int IonicProductsFragment = 2130903043;
+			public const int Main = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int Main = 2130903044;
+			public const int MainMenu = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int MainMenu = 2130903045;
+			public const int MapViewLayout = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int MapViewLayout = 2130903046;
+			public const int MysteryFragment = 2130903046;
 			
 			// aapt resource value: 0x7f030007
 			public const int ProductDetailView = 2130903047;
@@ -529,10 +541,13 @@ namespace TestOrderApp
 			public const int ProductTabbedView = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int ShowMapView = 2130903051;
+			public const int ScienceFragment = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int TakePicLayout = 2130903052;
+			public const int ShowMapView = 2130903052;
+			
+			// aapt resource value: 0x7f03000d
+			public const int TakePicLayout = 2130903053;
 			
 			static Layout()
 			{

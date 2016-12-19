@@ -14,16 +14,16 @@ using TestOrderApp.Utility;
 
 namespace TestOrderApp.Adapters
 {
-    public class ProductListAdapter : BaseAdapter<Product>
+    public class ProductListAdapter : BaseAdapter<Book>
     {
         private Activity _context;
-        private List<Product> _products;
-        public ProductListAdapter(Activity context, List<Product> products): base()
+        private List<Book> _products;
+        public ProductListAdapter(Activity context, List<Book> products): base()
         {
             _context = context;
             _products = products;
         }
-        public override Product this[int position]
+        public override Book this[int position]
         {
             get
             {

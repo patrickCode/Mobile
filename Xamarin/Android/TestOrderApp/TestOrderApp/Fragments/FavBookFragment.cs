@@ -14,7 +14,7 @@ using TestOrderApp.Adapters;
 
 namespace TestOrderApp.Fragments
 {
-    public class IonicFragment : BaseFragment
+    public class FavBookFragment : BaseFragment
     {
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -23,6 +23,7 @@ namespace TestOrderApp.Fragments
             // Create your fragment here
         }
 
+        //This method will be called when the host activity which calls this fragment is ready
         public override void OnActivityCreated(Bundle savedInstanceState)
         {
             base.OnActivityCreated(savedInstanceState);
@@ -30,14 +31,15 @@ namespace TestOrderApp.Fragments
             FindViews();
             HandleEvents();
 
-            _products = _productsService.GetProductGroup(2).Products;
+            _products = _productsService.GetFavoriteBooks().ToList();
             listView.Adapter = new ProductListAdapter(this.Activity, _products);
             listView.FastScrollEnabled = true;
         }
 
+        //Creates the View from the fragment
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            return inflater.Inflate(Resource.Layout.FavProductsFragment, container, false);
+            return inflater.Inflate(Resource.Layout.FavBooksFragment, container, false);
         }
     }
 }
