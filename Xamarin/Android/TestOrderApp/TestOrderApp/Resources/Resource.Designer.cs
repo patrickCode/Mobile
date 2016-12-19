@@ -352,17 +352,17 @@ namespace TestOrderApp
 			// aapt resource value: 0x7f070006
 			public const int adjust_width = 2131165190;
 			
-			// aapt resource value: 0x7f070020
-			public const int amountEditText = 2131165216;
+			// aapt resource value: 0x7f070021
+			public const int amountEditText = 2131165217;
 			
 			// aapt resource value: 0x7f07000a
 			public const int auto = 2131165194;
 			
-			// aapt resource value: 0x7f070027
-			public const int camImageView = 2131165223;
+			// aapt resource value: 0x7f070028
+			public const int camImageView = 2131165224;
 			
-			// aapt resource value: 0x7f07001f
-			public const int cancelButton = 2131165215;
+			// aapt resource value: 0x7f070020
+			public const int cancelButton = 2131165216;
 			
 			// aapt resource value: 0x7f07000b
 			public const int dark = 2131165195;
@@ -370,11 +370,14 @@ namespace TestOrderApp
 			// aapt resource value: 0x7f070012
 			public const int editText1 = 2131165202;
 			
-			// aapt resource value: 0x7f070025
-			public const int fragmentLayout = 2131165221;
+			// aapt resource value: 0x7f070026
+			public const int fragmentLayout = 2131165222;
 			
 			// aapt resource value: 0x7f070015
 			public const int goToStoreMainMenuButton = 2131165205;
+			
+			// aapt resource value: 0x7f07001a
+			public const int googleMapFrameLayout = 2131165210;
 			
 			// aapt resource value: 0x7f070000
 			public const int hybrid = 2131165184;
@@ -382,8 +385,8 @@ namespace TestOrderApp
 			// aapt resource value: 0x7f070007
 			public const int icon_only = 2131165191;
 			
-			// aapt resource value: 0x7f070028
-			public const int launchCamButtonView = 2131165224;
+			// aapt resource value: 0x7f070029
+			public const int launchCamButtonView = 2131165225;
 			
 			// aapt resource value: 0x7f07000c
 			public const int light = 2131165196;
@@ -397,38 +400,38 @@ namespace TestOrderApp
 			// aapt resource value: 0x7f070002
 			public const int normal = 2131165186;
 			
-			// aapt resource value: 0x7f070026
-			public const int openMapButtonView = 2131165222;
+			// aapt resource value: 0x7f070027
+			public const int openMapButtonView = 2131165223;
 			
 			// aapt resource value: 0x7f070013
 			public const int orderButton = 2131165203;
 			
-			// aapt resource value: 0x7f07001d
-			public const int priceTextView = 2131165213;
+			// aapt resource value: 0x7f07001e
+			public const int priceTextView = 2131165214;
 			
-			// aapt resource value: 0x7f070023
-			public const int productAbstractListTextView = 2131165219;
+			// aapt resource value: 0x7f070024
+			public const int productAbstractListTextView = 2131165220;
 			
-			// aapt resource value: 0x7f070021
-			public const int productIconImageView = 2131165217;
+			// aapt resource value: 0x7f070022
+			public const int productIconImageView = 2131165218;
 			
-			// aapt resource value: 0x7f07001a
-			public const int productImage = 2131165210;
+			// aapt resource value: 0x7f07001b
+			public const int productImage = 2131165211;
 			
 			// aapt resource value: 0x7f070010
 			public const int productListView = 2131165200;
 			
-			// aapt resource value: 0x7f070022
-			public const int productNameListTextView = 2131165218;
+			// aapt resource value: 0x7f070023
+			public const int productNameListTextView = 2131165219;
 			
-			// aapt resource value: 0x7f07001b
-			public const int productNameTextView = 2131165211;
+			// aapt resource value: 0x7f07001c
+			public const int productNameTextView = 2131165212;
 			
-			// aapt resource value: 0x7f070024
-			public const int productPriceListTextView = 2131165220;
+			// aapt resource value: 0x7f070025
+			public const int productPriceListTextView = 2131165221;
 			
-			// aapt resource value: 0x7f07001e
-			public const int relativeLayout1 = 2131165214;
+			// aapt resource value: 0x7f07001f
+			public const int relativeLayout1 = 2131165215;
 			
 			// aapt resource value: 0x7f070003
 			public const int satellite = 2131165187;
@@ -436,8 +439,8 @@ namespace TestOrderApp
 			// aapt resource value: 0x7f070018
 			public const int seeMapMainMenuButton = 2131165208;
 			
-			// aapt resource value: 0x7f07001c
-			public const int shortDescriptionTextView = 2131165212;
+			// aapt resource value: 0x7f07001d
+			public const int shortDescriptionTextView = 2131165213;
 			
 			// aapt resource value: 0x7f070008
 			public const int standard = 2131165192;
@@ -511,22 +514,25 @@ namespace TestOrderApp
 			public const int MainMenu = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int ProductDetailView = 2130903046;
+			public const int MapViewLayout = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int ProductMenuView = 2130903047;
+			public const int ProductDetailView = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int ProductRowView = 2130903048;
+			public const int ProductMenuView = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int ProductTabbedView = 2130903049;
+			public const int ProductRowView = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int ShowMapView = 2130903050;
+			public const int ProductTabbedView = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int TakePicLayout = 2130903051;
+			public const int ShowMapView = 2130903051;
+			
+			// aapt resource value: 0x7f03000c
+			public const int TakePicLayout = 2130903052;
 			
 			static Layout()
 			{

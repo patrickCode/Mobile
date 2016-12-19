@@ -48,7 +48,8 @@ namespace TestOrderApp
 
         private void _mapButton_Click(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(OpenMapActivity));
+            //var intent = new Intent(this, typeof(OpenMapActivity));
+            var intent = new Intent(this, typeof(MapViewActivity));
             StartActivity(intent);
         }
 

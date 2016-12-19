@@ -75,6 +75,7 @@
     <Compile Include="Fragments\BaseFragment.cs" />
     <Compile Include="Fragments\FavProductFragment.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="MapViewActivity.cs" />
     <Compile Include="MenuActivity.cs" />
     <Compile Include="OpenMapActivity.cs" />
     <Compile Include="ProductMenuActivity.cs" />
@@ -120,6 +121,7 @@
     <AndroidResource Include="Resources\layout\ShowMapView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\MapViewLayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
