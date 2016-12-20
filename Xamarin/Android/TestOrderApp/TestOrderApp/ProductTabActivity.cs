@@ -15,7 +15,7 @@ using Order.Core.Service;
 namespace TestOrderApp
 {
     //Replacement of Product menu activity
-    [Activity(Label = "Products", MainLauncher = false)]
+    [Activity(Label = "Library", MainLauncher = false)]
     public class ProductTabActivity : Activity
     {
         private ProductService _productServices;

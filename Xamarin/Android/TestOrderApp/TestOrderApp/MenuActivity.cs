@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace TestOrderApp
 {
-    [Activity(Label = "My Products", MainLauncher = true)]
+    [Activity(Label = "My Book Store", MainLauncher = true, Icon = "@drawable/bookIcon")]
     public class MenuActivity : Activity
     {   
         private Button _cartButton;

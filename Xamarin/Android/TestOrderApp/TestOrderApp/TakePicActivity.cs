@@ -16,7 +16,7 @@ using TestOrderApp.Utility;
 
 namespace TestOrderApp
 {
-    [Activity(Label = "Camera", MainLauncher = false)]
+    [Activity(Label = "Take a Photo", MainLauncher = false)]
     public class TakePicActivity : Activity
     {
         private ImageView _cameraImageView;

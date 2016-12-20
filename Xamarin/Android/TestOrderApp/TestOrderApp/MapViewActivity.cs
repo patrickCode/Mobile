@@ -14,7 +14,7 @@ using Android.Gms.Maps;
 
 namespace TestOrderApp
 {
-    [Activity(Label = "MapViewActivity")]
+    [Activity(Label = "Location")]
     public class MapViewActivity : Activity
     {
         private FrameLayout _mapFrame;

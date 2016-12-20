@@ -15,7 +15,7 @@ using TestOrderApp.Adapters;
 
 namespace TestOrderApp
 {
-    [Activity(Label = "Menu", MainLauncher = false)]
+    [Activity(Label = "Library", MainLauncher = false)]
     public class ProductMenuActivity : Activity
     {
         private ListView _productsListView;

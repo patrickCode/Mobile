@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Hello">Hello World, Click Me!</string>
-    <string name="ApplicationName">TestOrderApp</string>
+  <string name="Hello">Hello World, Click Me!</string>
+  <string name="ApplicationName">TestOrderApp</string>
+  <string name="GoToStoreBtnText">Go To Library</string>
+  <string name="ViewCartBtnText">View Cart</string>
+  <string name="TakePicBtnText">Take a Picture</string>
+  <string name="MapBtnText">See on Map</string>
+  <string name="AboutBtnText">About</string>
 </resources>

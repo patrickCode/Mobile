@@ -4,32 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ImageView
-        android:src="@drawable/phoenix"
+        android:src="@drawable/books"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:id="@+id/logoImageView" />
     <Button
-        android:text="Go to Store"
+        android:text="@string/GoToStoreBtnText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/goToStoreMainMenuButton" />
     <Button
-        android:text="View Cart"
+        android:text="@string/ViewCartBtnText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/viewCartMainMenuButton" />
     <Button
-        android:text="Take Picture"
+        android:text="@string/TakePicBtnText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/takePicMainMenuButton" />
     <Button
-        android:text="See on Map"
+        android:text="@string/MapBtnText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/seeMapMainMenuButton" />
     <Button
-        android:text="About"
+        android:text="@string/AboutBtnText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/aboutMainMenuButton" />

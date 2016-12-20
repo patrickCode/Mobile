@@ -15,7 +15,7 @@ using TestOrderApp.Utility;
 
 namespace TestOrderApp
 {
-    [Activity(Label = "Product Detail", MainLauncher = false)]
+    [Activity(Label = "Book", MainLauncher = false)]
     public class DetailActivity : Activity
     {
         private ImageView _productImageView;
