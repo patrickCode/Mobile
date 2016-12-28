@@ -9,15 +9,15 @@
         android:layout_height="200dp"
         android:id="@+id/logoImageView" />
     <Button
+        android:text="Sign-In"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginButton" />
+    <Button
         android:text="@string/GoToStoreBtnText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/goToStoreMainMenuButton" />
-    <Button
-        android:text="@string/ViewCartBtnText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/viewCartMainMenuButton" />
     <Button
         android:text="@string/TakePicBtnText"
         android:layout_width="match_parent"
