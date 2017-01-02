@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Chronos.Droid", "Chronos.Droid\Microsoft.Chronos.Droid.csproj", "{BA24F9E1-8D4A-4A83-92EB-BA78015AD0AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Chronos.Core", "Chronos.Core\Microsoft.Chronos.Core.csproj", "{C0289751-EA0B-4E87-AFC1-68CD4BA2B1B0}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MIcrosoft.Chronos.API", "Chronos.API\MIcrosoft.Chronos.API.xproj", "{79CAB21B-52F6-4AC2-85D9-838D6231468E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA24F9E1-8D4A-4A83-92EB-BA78015AD0AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA24F9E1-8D4A-4A83-92EB-BA78015AD0AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA24F9E1-8D4A-4A83-92EB-BA78015AD0AD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BA24F9E1-8D4A-4A83-92EB-BA78015AD0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA24F9E1-8D4A-4A83-92EB-BA78015AD0AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA24F9E1-8D4A-4A83-92EB-BA78015AD0AD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C0289751-EA0B-4E87-AFC1-68CD4BA2B1B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0289751-EA0B-4E87-AFC1-68CD4BA2B1B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0289751-EA0B-4E87-AFC1-68CD4BA2B1B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0289751-EA0B-4E87-AFC1-68CD4BA2B1B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79CAB21B-52F6-4AC2-85D9-838D6231468E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79CAB21B-52F6-4AC2-85D9-838D6231468E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79CAB21B-52F6-4AC2-85D9-838D6231468E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79CAB21B-52F6-4AC2-85D9-838D6231468E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

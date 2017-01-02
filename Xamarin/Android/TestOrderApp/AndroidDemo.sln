@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClockTab", "ClockTab\ClockT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClockDrawer", "ClockDrawer\ClockDrawer.csproj", "{5AF90682-647A-4D53-A705-82BC528813B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiLevelList", "MultiLevelList\MultiLevelList.csproj", "{27963E20-A745-4436-B7C4-BB9E568DBBCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +87,12 @@ Global
 		{5AF90682-647A-4D53-A705-82BC528813B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AF90682-647A-4D53-A705-82BC528813B0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5AF90682-647A-4D53-A705-82BC528813B0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{27963E20-A745-4436-B7C4-BB9E568DBBCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27963E20-A745-4436-B7C4-BB9E568DBBCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27963E20-A745-4436-B7C4-BB9E568DBBCE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{27963E20-A745-4436-B7C4-BB9E568DBBCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27963E20-A745-4436-B7C4-BB9E568DBBCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27963E20-A745-4436-B7C4-BB9E568DBBCE}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

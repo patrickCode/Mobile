@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("Dining.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("MultiLevelList.Resource", IsApplication=true)]
 
-namespace Dining
+namespace MultiLevelList
 {
 	
 	
@@ -61,13 +61,13 @@ namespace Dining
 		{
 			
 			// aapt resource value: 0x7f050002
-			public const int ratingBar = 2131034114;
+			public const int expandableListView1 = 2131034114;
 			
 			// aapt resource value: 0x7f050000
-			public const int recyclerView = 2131034112;
+			public const int groupHeaderText = 2131034112;
 			
 			// aapt resource value: 0x7f050001
-			public const int restaurantName = 2131034113;
+			public const int itemText = 2131034113;
 			
 			static Id()
 			{
@@ -83,10 +83,13 @@ namespace Dining
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int GroupHeaderLayout = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Restaurant = 2130903041;
+			public const int ItemLayout = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int Main = 2130903042;
 			
 			static Layout()
 			{

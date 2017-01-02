@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout1">
+    <TextView
+        android:text="Project:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/staticProjectText" />
+    <TextView
+        android:text="--project name--"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/staticProjectText"
+        android:textStyle="bold"
+        android:id="@+id/viewAssignmentHeaderProjectText"
+        android:paddingLeft="10dp" />
+    <TextView
+        android:text="Total"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewAssignmentHeaderProjectText"
+        android:textStyle="bold"
+        android:id="@+id/staticTotalText" />
+    <TextView
+        android:text="--hours--"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewAssignmentHeaderProjectText"
+        android:layout_toRightOf="@id/staticTotalText"
+        android:id="@+id/viewAssignmentHeaderTotalHourText"
+        android:textStyle="bold"
+        android:paddingLeft="10dp" />
+</RelativeLayout>

@@ -26,9 +26,6 @@ namespace TestOrderApp
 		
 		public static void UpdateIdValues()
 		{
-			global::Microsoft.IdentityModel.Clients.ActiveDirectory.Resource.Id.agentWebView = global::TestOrderApp.Resource.Id.agentWebView;
-			global::Microsoft.IdentityModel.Clients.ActiveDirectory.Resource.Layout.WebAuthenticationBroker = global::TestOrderApp.Resource.Layout.WebAuthenticationBroker;
-			global::Microsoft.IdentityModel.Clients.ActiveDirectory.Resource.String.ApplicationName = global::TestOrderApp.Resource.String.ApplicationName;
 		}
 		
 		public partial class Attribute
@@ -364,9 +361,6 @@ namespace TestOrderApp
 			// aapt resource value: 0x7f070006
 			public const int adjust_width = 2131165190;
 			
-			// aapt resource value: 0x7f07002a
-			public const int agentWebView = 2131165226;
-			
 			// aapt resource value: 0x7f070021
 			public const int amountEditText = 2131165217;
 			
@@ -552,9 +546,6 @@ namespace TestOrderApp
 			// aapt resource value: 0x7f03000d
 			public const int TakePicLayout = 2130903053;
 			
-			// aapt resource value: 0x7f03000e
-			public const int WebAuthenticationBroker = 2130903054;
-			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -571,14 +562,14 @@ namespace TestOrderApp
 			// aapt resource value: 0x7f040025
 			public const int AboutBtnText = 2130968613;
 			
-			// aapt resource value: 0x7f04001f
-			public const int ApplicationName = 2130968607;
+			// aapt resource value: 0x7f040020
+			public const int ApplicationName = 2130968608;
 			
 			// aapt resource value: 0x7f040021
 			public const int GoToStoreBtnText = 2130968609;
 			
-			// aapt resource value: 0x7f040020
-			public const int Hello = 2130968608;
+			// aapt resource value: 0x7f04001f
+			public const int Hello = 2130968607;
 			
 			// aapt resource value: 0x7f040024
 			public const int MapBtnText = 2130968612;
