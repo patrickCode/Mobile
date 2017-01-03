@@ -1,4 +1,5 @@
 ﻿using Chronos.Core.Model;
+using System;
 using System.Collections.Generic;
 
 namespace Chronos.Core.Interfaces

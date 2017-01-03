@@ -22,12 +22,15 @@ namespace Chronos.Droid.Adapters
         private IProjectRepository _projectRespository;
         private Activity _currentContext;
         private List<Project> _projects;
+        private List<Assignment> _selectedAssignments;
 
-        public AddAssignmentAdapter(Activity currentContext, IProjectRepository projectRespository, int selectedProjectId = -1)
+
+        public AddAssignmentAdapter(Activity currentContext, IProjectRepository projectRespository, List<Assignment> selectedAssignments = null, int selectedProjectId = -1)
         {
             _currentContext = currentContext;
             _projectRespository = projectRespository;
             GetAllProjects(selectedProjectId);
+            _selectedAssignments = selectedAssignments;
         }
 
         private void GetAllProjects(int selectedProjectId)
@@ -80,7 +83,7 @@ namespace Chronos.Droid.Adapters
             var requiredAssignment = requiredProject.Assignments[childPosition];
 
             var assignmentRow = convertView;
-            
+
             //Android initializing the view for the first time
             if (assignmentRow == null)
             {
@@ -94,7 +97,10 @@ namespace Chronos.Droid.Adapters
             var assignmentNameCheckView = viewHolder.AssignmentNameCheckView;
             assignmentNameCheckView.Tag = new AssignmentCheckBox(requiredProject.Id, requiredAssignment.Id);
             assignmentNameCheckView.Text = requiredAssignment.Name;
-            
+
+            if (_selectedAssignments.Select(assignment => assignment.Id).Contains(requiredAssignment.Id))
+                assignmentNameCheckView.Checked = true;
+
             assignmentNameCheckView.CheckedChange += AssignmentNameCheckView_CheckedChange;
 
             return assignmentRow;
@@ -108,7 +114,7 @@ namespace Chronos.Droid.Adapters
             var requiredProject = _projects.First(project => project.Id == assignementCheckBox.ProjectId);
             var requiredAssignment = requiredProject.Assignments.First(assignment => assignment.Id == assignementCheckBox.AssignmentId);
 
-            (_currentContext as AddAssignmentsActivity).AssignmentChanged(requiredAssignment);
+            (_currentContext as AddAssignmentsActivity).AssignmentChanged(requiredAssignment, e.IsChecked);
         }
 
         public override Java.Lang.Object GetGroup(int groupPosition)

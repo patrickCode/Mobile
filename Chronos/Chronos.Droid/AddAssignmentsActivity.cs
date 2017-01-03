@@ -13,6 +13,7 @@ using Chronos.Core.Interfaces;
 using Chronos.Core.Repository;
 using Chronos.Droid.Adapters;
 using Chronos.Core.Model;
+using Chronos.Droid.NativeServices;
 
 namespace Chronos.Droid
 {
@@ -22,13 +23,21 @@ namespace Chronos.Droid
         private ExpandableListView assignmentsListView;
         private Button applyButton;
         private Button cancelButton;
+        private DateTime _entryDate;
 
         private IProjectRepository _projectRepository;
+        private IAssignmentRepository _assignmentRepository;
         private List<Assignment> _selectedAssignments;
+        private List<Assignment> _unselectedAssignments;
+        private List<Assignment> _preSelectedAssignments;
+
         public AddAssignmentsActivity()
         {
             _projectRepository = new InMemoryProjectRepository();
+            _assignmentRepository = new InMemoryAssignmentRepository();
             _selectedAssignments = new List<Assignment>();
+            _preSelectedAssignments = new List<Assignment>();
+            _unselectedAssignments = new List<Assignment>();
         }
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -38,7 +47,11 @@ namespace Chronos.Droid
             InitViews();
             SetHandlers();
 
-            var adapter = new AddAssignmentAdapter(this, _projectRepository, -1);
+            _entryDate = DateTime.Parse(Intent.GetStringExtra("EntryDate"));
+            var selectedProjects = _assignmentRepository.GetUserAssignments("", _entryDate);
+            _preSelectedAssignments = selectedProjects.SelectMany(project => project.Assignments).ToList();
+
+            var adapter = new AddAssignmentAdapter(this, _projectRepository, _preSelectedAssignments, -1);
             assignmentsListView.SetAdapter(adapter);
         }
 
@@ -55,19 +68,56 @@ namespace Chronos.Droid
         }
 
         private void ApplyButtonClicked(object sender, EventArgs e)
+        {   
+            _assignmentRepository.AddNewAssignments(_selectedAssignments, _entryDate);
+            _assignmentRepository.RemoveExistingAssignments(_unselectedAssignments, _entryDate);
+
+            var assignment = _selectedAssignments[0];
+
+            var calendarService = new CalenderService(this);
+            calendarService.AddCalendarEvent(assignment.ProjectName, assignment.Name, _entryDate, _entryDate, TimeZone.CurrentTimeZone);
+
+            var intent = new Intent(this, typeof(AssignmentActivity));
+            StartActivity(intent);
+        }
+        
+        public void AssignmentChanged(Assignment assignment, bool selected)
         {
-            var dialog = new AlertDialog.Builder(this);
-            dialog.SetMessage(string.Join(", ", _selectedAssignments.Select(assignment => assignment.Name)));
-            dialog.Show();
+            var isAssignmentPreselected = _preSelectedAssignments.Any(preselectedAssignment => preselectedAssignment.Id == assignment.Id);
+            if (selected)
+            {
+                if (isAssignmentPreselected) //No action needed since the assignment was already pre-selected
+                    return;
+                _selectedAssignments.Add(assignment);
+            }
+            else
+            {
+                var requiredAssignment = _selectedAssignments.FirstOrDefault(assign => assign.Id == assignment.Id);
+                var preselectedAssignment = _preSelectedAssignments.FirstOrDefault(assign => assign.Id == assignment.Id);
+                if (isAssignmentPreselected)
+                    DeleteAssignment(preselectedAssignment);
+                _selectedAssignments.Remove(requiredAssignment);
+            }
+
+
+            //var requiredAssignment = _selectedAssignments.FirstOrDefault(assign => assign.Id == assignment.Id);
+            //if (requiredAssignment != null)
+            //{
+            //    _selectedAssignments.Remove(requiredAssignment);
+            //    DeleteAssignment(assignment);
+            //}   
+            //else
+            //{   
+            //    _selectedAssignments.Add(assignment);
+            //}   
         }
 
-        public void AssignmentChanged(Assignment assignment)
+        private void DeleteAssignment(Assignment deletedAssignment)
         {
-            var requiredAssignment = _selectedAssignments.FirstOrDefault(assign => assign.Id == assignment.Id);
-            if (requiredAssignment != null)
-                _selectedAssignments.Remove(requiredAssignment);
-            else
-                _selectedAssignments.Add(assignment);
+            if (_preSelectedAssignments.Any(assignment => assignment.Id == deletedAssignment.Id))
+            {
+                _unselectedAssignments.Add(deletedAssignment);
+            }
         }
     }
 }

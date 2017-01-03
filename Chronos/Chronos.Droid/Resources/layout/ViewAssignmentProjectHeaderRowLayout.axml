@@ -21,7 +21,7 @@
         android:paddingLeft="10dp" />
     <TextView
         android:text="Total"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/viewAssignmentHeaderProjectText"
@@ -29,7 +29,7 @@
         android:id="@+id/staticTotalText" />
     <TextView
         android:text="--hours--"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/viewAssignmentHeaderProjectText"

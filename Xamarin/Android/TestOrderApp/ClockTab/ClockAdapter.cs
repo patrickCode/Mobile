@@ -25,7 +25,7 @@ namespace ClockTab
         
 
         public override Android.Support.V4.App.Fragment GetItem(int position)
-        {
+        {   
             return fragments[position];
         }
 
