@@ -43,6 +43,7 @@
     <Compile Include="Model\Assignment.cs" />
     <Compile Include="Model\LaborCategory.cs" />
     <Compile Include="Model\Project.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\InMemoryAssignmentRepository.cs" />
     <Compile Include="Repository\InMemoryLaborCategoryRepository.cs" />

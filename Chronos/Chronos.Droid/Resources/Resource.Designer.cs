@@ -26,6 +26,9 @@ namespace Chronos.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Microsoft.IdentityModel.Clients.ActiveDirectory.Resource.Id.agentWebView = global::Chronos.Droid.Resource.Id.agentWebView;
+			global::Microsoft.IdentityModel.Clients.ActiveDirectory.Resource.Layout.WebAuthenticationBroker = global::Chronos.Droid.Resource.Layout.WebAuthenticationBroker;
+			global::Microsoft.IdentityModel.Clients.ActiveDirectory.Resource.String.ApplicationName = global::Chronos.Droid.Resource.String.ApplicationName;
 		}
 		
 		public partial class Animation
@@ -1504,6 +1507,9 @@ namespace Chronos.Droid
 			// aapt resource value: 0x7f0b0024
 			public const int activity_chooser_view_content = 2131427364;
 			
+			// aapt resource value: 0x7f0b007c
+			public const int agentWebView = 2131427452;
+			
 			// aapt resource value: 0x7f0b0030
 			public const int alertTitle = 2131427376;
 			
@@ -2007,6 +2013,9 @@ namespace Chronos.Droid
 			// aapt resource value: 0x7f03002d
 			public const int ViewAssignmentsLayout = 2130903085;
 			
+			// aapt resource value: 0x7f03002e
+			public const int WebAuthenticationBroker = 2130903086;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -2020,11 +2029,11 @@ namespace Chronos.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050015
-			public const int ApplicationName = 2131034133;
-			
 			// aapt resource value: 0x7f050014
-			public const int Hello = 2131034132;
+			public const int ApplicationName = 2131034132;
+			
+			// aapt resource value: 0x7f050015
+			public const int Hello = 2131034133;
 			
 			// aapt resource value: 0x7f050000
 			public const int abc_action_bar_home_description = 2131034112;

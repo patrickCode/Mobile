@@ -15,7 +15,7 @@ using Chronos.Droid.Adapters;
 
 namespace Chronos.Droid
 {
-    [Activity(Label = "Chronos", MainLauncher = true)]
+    [Activity(Label = "Chronos", MainLauncher = false)]
     public class AssignmentActivity : Android.Support.V4.App.FragmentActivity
     {
         private ViewPager DaysViewPager;
